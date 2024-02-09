@@ -24,6 +24,10 @@ const StyledDiv = styled.main`
   justify-content: space-around;
   position: relative;
   padding: 10rem 5rem;
+
+  @media only screen and (max-width: 500px) {
+    padding: 10rem 0rem;
+  }
 `;
 
 const Hero = styled.div`
@@ -43,6 +47,10 @@ const Hero = styled.div`
   @media only screen and (max-width: 900px) {
     padding: 0 5rem;
     flex-direction: column;
+  }
+
+  @media only screen and (max-width: 500px) {
+    padding: 0 5rem;
   }
 `;
 

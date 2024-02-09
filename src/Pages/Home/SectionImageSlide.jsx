@@ -13,6 +13,12 @@ const StyledDivs = styled.div`
   background-color: var(--color-primary);
   text-align: center;
   padding: 5rem 0;
+
+  @media only screen and (max-width: 500px) {
+    & > div:first-child {
+      padding: 0 5rem;
+    }
+  }
 `;
 
 const StyledCompareSlider = styled(ReactCompareSlider)`
@@ -51,7 +57,7 @@ function SectionImageSlide() {
           start: "35% 25%",
           end: "100% center",
           scrub: true,
-          // markers: true,
+          markers: true,
           pin: ".pin",
           toggleActions: "play reverse play reverse",
           onUpdate: (self) => {

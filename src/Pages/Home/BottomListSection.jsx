@@ -20,6 +20,10 @@ const ContainerMain = styled.div`
   margin: 0 auto;
   padding: 1rem;
   gap: 5rem;
+
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+  }
 `;
 
 const ContainerLeft = styled.div`
@@ -37,6 +41,13 @@ const ContainerHeaderText = styled.h2`
   border-radius: 10px;
   cursor: pointer;
   user-select: none;
+
+  @media only screen and (max-width: 900px) {
+    width: auto;
+    display: inline-block;
+    overflow-y: scroll;
+    margin: auto;
+  }
 `;
 
 const ContainerRight = styled.div`

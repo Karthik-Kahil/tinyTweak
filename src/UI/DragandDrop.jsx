@@ -35,6 +35,12 @@ const DropzoneContainer = styled.div`
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
   }
+
+  @media only screen and (max-width: 500px) {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+  }
 `;
 
 const Description = styled.div`

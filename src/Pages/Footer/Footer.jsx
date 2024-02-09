@@ -37,6 +37,14 @@ const StyledDiv = styled.div`
   & h2 {
     font-size: 2rem;
   }
+
+  @media only screen and (max-width: 500px) {
+    & ul {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+  }
 `;
 
 const Signature = styled.div`
