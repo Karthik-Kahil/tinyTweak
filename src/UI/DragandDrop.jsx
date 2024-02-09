@@ -110,6 +110,7 @@ const DragAndDrop = () => {
       "image/png": [".png"],
       "image/jpg": [".jpg"],
       "image/jpeg": [".jpeg"],
+      "image/webp": [".webp"],
     },
   });
 

@@ -147,10 +147,10 @@ function SectionPerformance() {
     <StyledDiv ref={refDimension}>
       <Container>
         <div>
-          <h2>Speed up your website with Tinify</h2>
+          <h2>Speed up your website with TinyTweak&apos;s</h2>
           <p>
-            Maximize your website’s performance and improve SEO rankings with
-            Tinify’s image optimization.
+            Maximize your website&apos;s performance and improve SEO rankings
+            with TinyTweak&apos;s image optimization.
           </p>
         </div>
         <img src="./public/assets/5143541.webp" alt="" />

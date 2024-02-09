@@ -7,7 +7,6 @@ import SectionHeader from "./SectionHeader";
 import gsap from "gsap/all";
 import { ScrollTrigger } from "gsap/all";
 import { useEffect, useRef, useState } from "react";
-import Logo from "../../UI/Logo";
 
 const StyledDivs = styled.div`
   background-color: var(--color-primary);
@@ -33,6 +32,14 @@ const ArrowMarkLeft = styled.div`
   top: 5rem;
   left: 5rem;
   color: var(--color-white);
+
+  & h2 {
+    font-size: 3rem;
+  }
+
+  & p {
+    font-size: 2rem;
+  }
 `;
 
 const ArrowMarkRight = styled.div`
@@ -41,6 +48,14 @@ const ArrowMarkRight = styled.div`
   top: 5rem;
   right: 5rem;
   color: var(--color-white);
+
+  & h2 {
+    font-size: 3rem;
+  }
+
+  & p {
+    font-size: 2rem;
+  }
 `;
 
 function SectionImageSlide() {
@@ -79,12 +94,16 @@ function SectionImageSlide() {
   return (
     <StyledDivs ref={ref}>
       <SectionHeader>
-        <h4>IMAGE COMPRESSION AND CONVERSION WITHOUT VISIBLE QUALITY LOSS</h4>
+        <h4>QUALITY-PRESERVING IMAGE COMPRESSION & CONVERSION</h4>
         <h2>Can you tell the difference?</h2>
         <p>
-          Move the slider to compare the compressed and converted image with the
-          original. <br />
-          The file size is reduced by more than 85%!
+          Use the slider to compare the original image with the compressed and
+          converted version.
+          <br />
+          The file size has been reduced by over 55%! Enhance your
+          website&apos;s speed with TinyTweak.
+          <br />
+          The file size is reduced by more than 55%!
         </p>
       </SectionHeader>
 
@@ -94,11 +113,11 @@ function SectionImageSlide() {
           <>
             <ArrowMarkLeft>
               <h2>ORIGINAL</h2>
-              <p>1.3 MB</p>
+              <p>983 KB</p>
             </ArrowMarkLeft>
             <ArrowMarkRight>
-              <Logo />
-              <p>949 KB</p>
+              <h2>TinyTweak</h2>
+              <p>488 KB</p>
             </ArrowMarkRight>
             <ReactCompareSliderImage
               alt="Image one"

@@ -22,10 +22,10 @@ function SectionOptimization() {
           <h4>OUR PRODUCTS</h4>
           <h2>Optimization for each project</h2>
           <p>
-            Tailored solutions for website owners, developers, and designers,
-            ensuring optimal website performance for every project. Discover the
-            advantages of faster loading times with our image optimization
-            tools.
+            Explore customized solutions designed for website owners,
+            developers, and designers, guaranteeing peak website performance for
+            each project. Uncover the benefits of enhanced loading speeds
+            through our image optimization tools.
           </p>
         </SectionHeader>
         <FourGridSection />
