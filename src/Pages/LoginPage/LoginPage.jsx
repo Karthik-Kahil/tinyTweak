@@ -253,6 +253,7 @@ function LoginPage({ onClick }) {
             <input
               type="password"
               id="password"
+              minLength={8}
               {...register("password", { required: "Password is required" })}
             />
             <ErrorMessage>
@@ -264,6 +265,7 @@ function LoginPage({ onClick }) {
             <input
               type="password"
               id="passwordConfirm"
+              minLength={8}
               {...register("passwordConfirm", {
                 required: "Please confirm your password",
               })}

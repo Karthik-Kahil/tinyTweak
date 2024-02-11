@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import DragandDrop from "../../UI/DragandDrop";
-import { Suspense, lazy, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
@@ -8,8 +8,7 @@ import SectionSize from "./SectionSize";
 import SectionPerformance from "./SectionPerformance";
 import SectionOptimization from "./SectionOptimization";
 import BottomListSection from "./BottomListSection";
-import SpinnerMini from "../../UI/SpinnerMini";
-const SectionImageSlide = lazy(() => import("./SectionImageSlide"));
+import SectionImageSlide from "./SectionImageSlide";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -161,9 +160,7 @@ function Home() {
       </StyledDiv>
       <SectionSize />
 
-      <Suspense fallback={<SpinnerMini />}>
-        <SectionOptimization />
-      </Suspense>
+      <SectionOptimization />
       <SectionImageSlide />
       <SectionPerformance />
       <BottomListSection />

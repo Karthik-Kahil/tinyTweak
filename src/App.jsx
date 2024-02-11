@@ -19,12 +19,16 @@ const queryClient = new QueryClient({
 });
 
 function App() {
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(true);
 
   useEffect(() => {
-    window.onload = () => {
+    const handlePageLoad = () => {
       setIsLoaded(false);
     };
+
+    handlePageLoad();
+
+    return () => {};
   }, []);
 
   return (
