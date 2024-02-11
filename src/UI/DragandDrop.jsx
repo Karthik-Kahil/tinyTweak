@@ -84,7 +84,7 @@ const DragAndDrop = () => {
       });
 
       axios
-        .post("https://karthikkahil.cloud/api/v1/client", formData)
+        .post("https://tinytweak.karthikkahil.cloud/api/v1/client", formData)
         .then((response) => {
           dispatch(dropOutData(response.data.data.user.images));
         })

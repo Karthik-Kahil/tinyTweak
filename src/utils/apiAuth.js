@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 export async function loginAuth(data) {
   try {
     const sendData = await axios.post(
-      "https://karthikkahil.cloud/api/v1/user/login",
+      "https://tinytweak.karthikkahil.cloud/api/v1/user/login",
       data,
       {
         withCredentials: true,
@@ -40,7 +40,7 @@ export async function loginAuth(data) {
 export async function loggout() {
   try {
     const sendData = await axios.post(
-      "https://karthikkahil.cloud/api/v1/user/logout",
+      "https://tinytweak.karthikkahil.cloud/api/v1/user/logout",
       {
         withCredentials: true,
         headers: {
@@ -69,7 +69,7 @@ export async function loggout() {
 export async function apiCenter(data) {
   try {
     const sendData = await axios.post(
-      "https://karthikkahil.cloud/api/v1/client",
+      "https://tinytweak.karthikkahil.cloud/api/v1/client",
       data,
       {
         withCredentials: true,
@@ -101,7 +101,7 @@ export async function uploadImages(images) {
     });
 
     const response = await axios.post(
-      "https://karthikkahil.cloud/api/v1/client",
+      "https://tinytweak.karthikkahil.cloud/api/v1/client",
       formData,
       {
         withCredentials: true,
@@ -124,7 +124,7 @@ export async function uploadImages(images) {
 export async function signUpAuth(data) {
   try {
     const sendData = await axios.post(
-      "https://karthikkahil.cloud/api/v1/user/signup",
+      "https://tinytweak.karthikkahil.cloud/api/v1/user/signup",
       data,
       {
         withCredentials: true,
@@ -153,7 +153,7 @@ export async function signUpAuth(data) {
 export async function zipDownloadHandler() {
   try {
     const response = await axios.get(
-      "https://karthikkahil.cloud/api/v1/client/download-multiple",
+      "https://tinytweak.karthikkahil.cloud/api/v1/client/download-multiple",
       {
         responseType: "blob",
       }
