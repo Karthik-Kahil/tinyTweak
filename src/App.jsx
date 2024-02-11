@@ -6,6 +6,8 @@ import Home from "./pages/home/home";
 import AppLayout from "./AppLayout";
 import Api from "./Pages/API/Api";
 import PageNotFound from "./Pages/PageNotFound/PageNotFound";
+import Spinner from "./UI/Spinner";
+import { useEffect, useState } from "react";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -17,8 +19,17 @@ const queryClient = new QueryClient({
 });
 
 function App() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    window.onload = () => {
+      setIsLoaded(false);
+    };
+  }, []);
+
   return (
     <>
+      {isLoaded && <Spinner />}
       <QueryClientProvider client={queryClient}>
         <ReactQueryDevtools initialIsOpen={false} />
         <GlobalStyles />

@@ -1,14 +1,15 @@
 import styled from "styled-components";
 import DragandDrop from "../../UI/DragandDrop";
-import SectionOptimization from "./SectionOptimization";
-import { useEffect, useRef } from "react";
+import { Suspense, lazy, useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
 import SectionSize from "./SectionSize";
-import SectionImageSlide from "./SectionImageSlide";
 import SectionPerformance from "./SectionPerformance";
+import SectionOptimization from "./SectionOptimization";
 import BottomListSection from "./BottomListSection";
+import SpinnerMini from "../../UI/SpinnerMini";
+const SectionImageSlide = lazy(() => import("./SectionImageSlide"));
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -145,6 +146,7 @@ function Home() {
           alt="rocket-animation-icon"
         />
       </RocketImage>
+
       <StyledDiv>
         <Hero>
           <HeroTitle>
@@ -158,7 +160,10 @@ function Home() {
         </Hero>
       </StyledDiv>
       <SectionSize />
-      <SectionOptimization />
+
+      <Suspense fallback={<SpinnerMini />}>
+        <SectionOptimization />
+      </Suspense>
       <SectionImageSlide />
       <SectionPerformance />
       <BottomListSection />

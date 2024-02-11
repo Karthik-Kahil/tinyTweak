@@ -72,7 +72,7 @@ function SectionImageSlide() {
           start: "35% 25%",
           end: "100% center",
           scrub: true,
-          markers: true,
+          // markers: true,
           pin: ".pin",
           toggleActions: "play reverse play reverse",
           onUpdate: (self) => {
