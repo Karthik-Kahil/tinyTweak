@@ -2,10 +2,10 @@ const sectionData = [
   {
     name: "General",
     question: [
-      "Why compress website images, and how does TinyPNG help?",
+      "Why compress website images, and how does TinyTweaks help?",
       "Does TinyTweak support WebP images?",
       "What does TinyTweak do?",
-      "What file formats does TinyPNG support for image compression?",
+      "What file formats does TinyTweaks support for image compression?",
     ],
     questionOneAns: [
       "Compressing your images for your website offers numerous advantages. By utilizing the TinyTweak algorithm, you can significantly decrease file sizes by as much as 80% without compromising quality. This results in quicker page loading times, which are crucial for retaining user interest and enhancing overall user experience.<br/><br/>Moreover, image compression helps reduce bandwidth usage, making your website more resource-efficient and economical. Additionally, optimizing images plays a vital role in SEO, as it enhances page speeds and boosts your website's visibility in search engine rankings.",
@@ -39,7 +39,7 @@ const sectionData = [
       "Should I convert my web images to WebP?",
     ],
     questionOneAns: [
-      "Absolutely! You can utilize the drag-and-drop web optimizer at tinypng.com without any cost. Free users can upload up to 50 images at once, with each image having a maximum size of 10MB. Simply log in to your free account and start optimizing.<br/><br/>Additionally, if you need to convert images to other file types, you can convert up to 3 images for free.<br/><br/>If you require more capacity, you may consider upgrading to our Web Pro or Web Ultra subscriptions, which offer additional benefits for optimizing your images beyond the limitations of our free service.",
+      "Absolutely! You can utilize the drag-and-drop web optimizer at TinyTweaks.com without any cost. Free users can upload up to 50 images at once, with each image having a maximum size of 10MB. Simply log in to your free account and start optimizing.<br/><br/>Additionally, if you need to convert images to other file types, you can convert up to 3 images for free.<br/><br/>If you require more capacity, you may consider upgrading to our Web Pro or Web Ultra subscriptions, which offer additional benefits for optimizing your images beyond the limitations of our free service.",
       "Using the TinyTweak compressor, it's easy to minimize the file size of your WebP, PNG, and JPG images. Just drag and drop your pictures onto the web interface, and our intelligent algorithm will compress them for optimal results.",
       "WebP has gained popularity for its exceptional performance in terms of both image quality and file size. With TinyTweak's image converter, you can easily transform your JPG and PNG images into the WebP format.<br/><br/>However, it's important to consider that other formats may still excel in specific situations. TinyTweak's online tool streamlines the process of determining the best image version for optimal performance. When converting to multiple formats, the smallest format is indicated with a green check mark for your convenience.",
     ],

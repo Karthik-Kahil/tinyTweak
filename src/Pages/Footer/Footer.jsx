@@ -91,10 +91,22 @@ function Footer() {
         </ul>
       </Container>
       <Signature>
-        <h2>Built by Karthik Kahil</h2>
+        <h2>
+          Built by{" "}
+          <Link to={"https://karthikkahil.cloud/"} target="_blank">
+            Karthik Kahil
+          </Link>
+        </h2>
         <div>
-          <FaLinkedin />
-          <FaGithub />
+          <Link
+            to={"https://www.linkedin.com/in/karthik-r-10348119a/"}
+            target="_blank"
+          >
+            <FaLinkedin />
+          </Link>
+          <Link to={"https://github.com/Karthik-Kahil"} target="_blank">
+            <FaGithub />
+          </Link>
         </div>
       </Signature>
     </StyledDiv>
